@@ -6,8 +6,6 @@ Instead of focusing only on statistical formulas, it incorporates **real-world c
 
 > *Can this experiment realistically reach statistical power before we need to make a decision?*
 
----
-
 ## Why this project exists
 
 In practice, many A/B tests are launched even though they are **statistically impossible** to conclude within the available time or traffic.
@@ -18,8 +16,6 @@ This leads to:
 - Wasted engineering and product effort
 
 This tool is designed as a **pre-experiment screening step** to help teams avoid running experiments that are unlikely to produce reliable outcomes.
-
----
 
 ## What the tool does
 
@@ -38,7 +34,6 @@ Given a set of **experiment assumptions and constraints**, the notebook:
 4. Provides **actionable recommendations** when an experiment is not viable
 5. Includes a **sensitivity analysis** showing trade-offs between effect size and runtime
 
----
 
 ## What this project is *not*
 
@@ -48,7 +43,6 @@ Given a set of **experiment assumptions and constraints**, the notebook:
 
 This is an **upstream decision tool**, used *before* an experiment is launched.
 
----
 
 ## Key inputs
 
@@ -66,8 +60,6 @@ The notebook works entirely from planning assumptions that are typically known u
 
 These inputs reflect how experiments are planned in real product teams.
 
----
-
 ## Outputs
 
 For each scenario, the tool outputs:
@@ -78,8 +70,6 @@ For each scenario, the tool outputs:
 - A **feasibility verdict**
 - Practical next-step recommendations if the test is not feasible
 
----
-
 ## Sensitivity analysis
 
 Rather than relying on a single Minimum Detectable Effect (MDE), the notebook explores a **range of effect sizes** and shows:
@@ -89,8 +79,6 @@ Rather than relying on a single Minimum Detectable Effect (MDE), the notebook ex
 - Which MDEs are feasible within the same time constraint
 
 This helps teams make **explicit trade-offs** between ambition and realism.
-
----
 
 ## Example scenarios
 
@@ -104,8 +92,6 @@ The notebook includes two illustrative cases:
 Result: **Not feasible**  
 Correct decision: do not run the experiment.
 
----
-
 ### Scenario B: Healthy-traffic product
 - High daily traffic
 - Same statistical assumptions
@@ -114,15 +100,11 @@ Correct decision: do not run the experiment.
 Result:  **Feasible**  
 Correct decision: experiment is likely to reach power.
 
----
-
 ## Methodology notes
 
 - Sample size is calculated using a **normal approximation** for a two-sample test of proportions.
 - This approach is standard for **experiment planning** when sample sizes are moderate to large.
 - The focus is on **decision usefulness**, not perfect theoretical optimality.
-
----
 
 ## Limitations
 
@@ -132,8 +114,6 @@ Correct decision: experiment is likely to reach power.
 - Designed for planning, not final inference
 
 These are intentional trade-offs for clarity and usability.
-
----
 
 ## How to run
 
@@ -145,8 +125,6 @@ The easiest way to run this project is via Google Colab.
 
 No setup or data is required.
 
----
-
 ## Why this matters for product analytics
 
 Good experimentation is not just about running tests—it’s about **knowing when not to run them**.
@@ -157,5 +135,3 @@ This project demonstrates:
 - Real-world experimentation thinking
 
 It can be used as a **pre-launch checklist** for product, growth, and experimentation teams.
-
----
