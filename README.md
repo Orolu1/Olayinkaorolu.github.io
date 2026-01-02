@@ -1,4 +1,7 @@
 # A/B Test Feasibility & Sample Size Reality Checker
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+https://colab.research.google.com/github/Orolu1/Olayinkaorolu.github.io/blob/main/ab_test_feasibility_checker.ipynb
+)
 
 This project helps product teams decide **whether an A/B test is worth running at all**.
 
